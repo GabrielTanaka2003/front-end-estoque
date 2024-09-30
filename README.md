@@ -1,50 +1,60 @@
-# React + TypeScript + Vite
+# Projeto de ESTOQUE (FRONT-END)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Projeto React com Vite
 
-Currently, two official plugins are available:
+Este projeto é uma aplicação **React** configurada com **Vite**. O Vite é uma ferramenta de build rápida e otimizada para desenvolvimento de projetos web modernos, fornecendo um ambiente de desenvolvimento leve e compilação otimizada para produção.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+- **React 18**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Vite**: Ferramenta de desenvolvimento rápida com suporte a módulos ES e build otimizado.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Requisitos
 
-- Configure the top-level `parserOptions` property like this:
+Certifique-se de que sua máquina atenda aos seguintes requisitos:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- [Node.js](https://nodejs.org/en/) (Versão 14 ou superior)
+- [npm](https://www.npmjs.com/)
+
+### Como Executar o Projeto
+
+#### 1. Clonar o Repositório
+
+Clone o repositório do projeto para a sua máquina local:
+
+```bash
+git clone https://github.com/GabrielTanaka2003/front-end-estoque
+cd front-end-estoque
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+#### 2. Instalar as Dependências
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Instale as dependências do projeto utilizando npm:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
 ```
+
+#### 3. Executar em Ambiente de Desenvolvimento
+Após a instalação das dependências, execute o projeto em modo de desenvolvimento. O Vite disponibiliza um servidor de desenvolvimento com recarga automática a cada modificação no código.
+
+```bash
+npm run dev
+```
+
+A aplicação estará disponível em http://localhost:5173. A porta pode variar, então verifique o console para confirmar a URL correta.
+
+### Ferramentas e Bibliotecas Adicionais
+
+Este projeto pode incluir as seguintes bibliotecas e ferramentas para melhorar o desenvolvimento:
+
+- Axios: Requisições HTTP.
+- TypeScript: Tipagem estática opcional para maior robustez.
+
+### Contribuições
+
+Contribuições são bem-vindas! Se você deseja sugerir melhorias ou correções, fique à vontade para abrir um pull request.
+
+### Licença
+
+Este projeto está licenciado sob a MIT License.

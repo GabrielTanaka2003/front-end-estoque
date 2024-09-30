@@ -55,8 +55,15 @@
 
 .modal-overflow .modal-body .btn-secondary{
     position: initial;
-    width: 100%;
+    width: 50%;
     margin-top: 32px;
+}
+
+.modal-overflow .modal-body .btn-left{
+    position: initial;
+    width: 45%;
+    margin-top: 32px;
+    margin-left: 32px;
 }
 
 .modal-overflow .modal-body .btn-secondary:hover {

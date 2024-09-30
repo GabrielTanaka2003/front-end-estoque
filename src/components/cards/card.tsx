@@ -10,8 +10,6 @@ interface CardProps {
 }
 
 export function Card({id,value,name,quantity} : CardProps){
-    console.log(id)
-    console.log(value)
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedItemId, setSelectedItemId] = useState<string | null>(null);

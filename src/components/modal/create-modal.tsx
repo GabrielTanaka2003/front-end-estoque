@@ -54,13 +54,11 @@ export function CreateModal({ closeModal }: ModalProps){
                     <Input label="Nome do Produto" value={name} update={setName}/>
                     <Input label="Preço" value={value} update={setValue}/>
                     <Input label="Quantidade" value={quantity} update={setQuantity}/>
-                </form>
-                <div className="footer">
                     <button onClick={submit} className="btn-secondary">
-                        {isPending ? 'postando...' : 'postar'}
+                        {isPending ? 'Postando...' : 'Postar'}
                     </button>
                     <button type="button" onClick={() => closeModal()} className="btn-left">Voltar</button>
-                </div>
+                </form>
             </div>
         </div>
     )
